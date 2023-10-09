@@ -1,0 +1,12 @@
+{
+  "name": "warp-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "arweave": "^1.14.4",
+    "warp-contracts": "^1.4.19",
+    "warp-contracts-plugin-deploy": "^1.0.9"
+  }
+}
