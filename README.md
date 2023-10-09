@@ -20,8 +20,6 @@ node scripts/deploy.js
 
 > This displays the transaction id of the contract deployed, take note of it and paste it in the `scripts/readState.js` and `scripts/add.js`files
 
-##
-
 ## Read the state of the contract
 
 Remember to copy the contract tx id before you call `readState` or `add` !

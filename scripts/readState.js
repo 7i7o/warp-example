@@ -1,22 +1,18 @@
 // script to deploy contract source
 
 // imports
-import fs from "fs";
-import path from "path";
+// import fs from "fs";
 import { WarpFactory } from "warp-contracts";
-import { ArweaveSigner } from "warp-contracts-plugin-deploy";
 
-WARP_CONTRACT_TX_ID = "OiZdMxlnWZoGhXqIFRFGFeM_1s2WnYyAszxXvw0U-iw";
+const WARP_CONTRACT_TX_ID = "OiZdMxlnWZoGhXqIFRFGFeM_1s2WnYyAszxXvw0U-iw";
 
 // intiating new warp instance for mainnet
 const warp = WarpFactory.forMainnet();
 
 // read private key file
-const key = JSON.parse(fs.readFileSync("wallet.json").toString());
+// const key = JSON.parse(fs.readFileSync("wallet.json").toString());
 
-const warpContractInstance = (await warp.contract(WARP_CONTRACT_TX_ID)).connect(
-  new ArweaveSigner(key)
-);
+const warpContractInstance = await warp.contract(WARP_CONTRACT_TX_ID);
 
 const state = await warpContractInstance.readState();
 

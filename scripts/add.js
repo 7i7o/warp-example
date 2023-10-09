@@ -6,7 +6,7 @@ import path from "path";
 import { WarpFactory } from "warp-contracts";
 import { ArweaveSigner } from "warp-contracts-plugin-deploy";
 
-WARP_CONTRACT_TX_ID = "OiZdMxlnWZoGhXqIFRFGFeM_1s2WnYyAszxXvw0U-iw";
+const WARP_CONTRACT_TX_ID = "OiZdMxlnWZoGhXqIFRFGFeM_1s2WnYyAszxXvw0U-iw";
 
 // intiating new warp instance for mainnet
 const warp = WarpFactory.forMainnet();
