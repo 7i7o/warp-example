@@ -18,8 +18,8 @@ const warpContractInstance = (await warp.contract(WARP_CONTRACT_TX_ID)).connect(
   new ArweaveSigner(key)
 );
 
-// const state = await warpContractInstance.readState();
+const state = await warpContractInstance.readState();
 
-await warpContractInstance.writeInteraction({
-  function: "add",
-});
+console.log("");
+console.log("Warp Contract State: ", state);
+console.log("");

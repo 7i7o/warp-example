@@ -31,4 +31,6 @@ const { contractTxId } = await warp.createContract.deploy({
   src: contractSource,
 });
 
+console.log("");
 console.log("Contract deployed to: ", contractTxId);
+console.log("");
